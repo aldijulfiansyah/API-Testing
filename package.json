@@ -13,7 +13,10 @@
     "test createUser": "mocha test/api/User/post/userCreate.js",
     "test loginUser": "mocha test/api/Login/login.js",
     "test register": "mocha test/api/Register/register.js",
-    "test updateUserPut": "mocha test/api/User/put/userUpdate.js"
+    "test updateUserPut": "mocha test/api/User/put/userUpdate.js",
+    "test deleteUser": "mocha test/api/User/delete/userDelete.js",
+    "test listResources": "mocha test/api/Resource/resourceList.js",
+    "test singleResource": "mocha test/api/Resource/resourceById.js"
   },
   "author": "aldijulfiansyah",
   "license": "ISC",
