@@ -11,7 +11,9 @@
     "test listUser": "mocha test/api/User/get/userList.js",
     "test userById": "mocha test/api/User/get/userSingle.js",
     "test createUser": "mocha test/api/User/post/userCreate.js",
-    "test loginUser": "mocha test/api/Login/login.js"
+    "test loginUser": "mocha test/api/Login/login.js",
+    "test register": "mocha test/api/Register/register.js",
+    "test updateUserPut": "mocha test/api/User/put/userUpdate.js"
   },
   "author": "aldijulfiansyah",
   "license": "ISC",

@@ -3,14 +3,14 @@ const baseUrl = require('../../../env.js');
 const { expect } = require('chai');
 
 
-describe('Login', () => {
+describe('Register', () => {
 
-    const login = ()=>{
-        return request(baseUrl()).post('/login')
+    const register = ()=>{
+        return request(baseUrl()).post('/register')
         .send(
                 {
                     "email": "eve.holt@reqres.in",
-                    "password": "cityslicka"
+                    "password": "pistol"
                 }
             )
     }
@@ -22,14 +22,17 @@ describe('Login', () => {
         console.log('Body : ', response.body);
     }
 
-    it('respond that user login succesfully', async() => {
-        const response = await login()
-        logResponse(`Login Detail`, response)
-        expect (response.status).to.equal(200)
+    it('respond that user register succesfully', async() => {
+        const response = await register()
+        logResponse(`Register response : `, response)
+        expect(response.status).to.equal(200)
+
     });
 
     it('response have token property ', async() => {
+        const response = await register()
         expect(response.body).to.haveOwnProperty(`token`)
     });
+
     
 });
