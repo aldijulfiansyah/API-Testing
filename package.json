@@ -1,0 +1,27 @@
+{
+  "name": "jest-api-test",
+  "version": "1.0.0",
+  "description": "mocha chai petStore api",
+  "main": "index.js",
+  "scripts": {
+    "test get": "mocha test/api/getTest.js",
+    "welcome": "mocha test/api/welcomeTest.js",
+    "test assert": "mocha test/api/chaiAssert.js",
+    "test post": "mocha test/api/postTest.js",
+    "test listUser": "mocha test/api/User/get/userList.js",
+    "test userById": "mocha test/api/User/get/userSingle.js",
+    "test createUser": "mocha test/api/User/post/userCreate.js",
+    "test loginUser": "mocha test/api/Login/login.js"
+  },
+  "author": "aldijulfiansyah",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3",
+    "supertest": "^6.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.5"
+  }
+}

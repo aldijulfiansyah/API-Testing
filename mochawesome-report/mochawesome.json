@@ -1,0 +1,119 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-11-30T07:53:42.337Z",
+    "end": "2023-11-30T07:53:42.884Z",
+    "duration": 547,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f6d2c8c9-1de5-4851-a7fc-f720f0e76e8d",
+      "title": "",
+      "fullFile": "D:\\Testing\\Projects\\jest-api-test\\test\\api\\chaiAssert.js",
+      "file": "\\test\\api\\chaiAssert.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "26de1081-5ddc-4c57-9fab-421c524898a0",
+          "title": "Post request assert",
+          "fullFile": "D:\\Testing\\Projects\\jest-api-test\\test\\api\\chaiAssert.js",
+          "file": "\\test\\api\\chaiAssert.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "response status equal to 201",
+              "fullTitle": "Post request assert response status equal to 201",
+              "timedOut": false,
+              "duration": 537,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect((await response).status).to.equal(201)",
+              "err": {},
+              "uuid": "c666294c-5fba-4b2b-8350-65c62ad1b888",
+              "parentUUID": "26de1081-5ddc-4c57-9fab-421c524898a0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "response have created at property ",
+              "fullTitle": "Post request assert response have created at property ",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect((await response).body).to.haveOwnProperty(`createdAt`)",
+              "err": {},
+              "uuid": "10556cd1-c002-41e0-8b97-acddddb46102",
+              "parentUUID": "26de1081-5ddc-4c57-9fab-421c524898a0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c666294c-5fba-4b2b-8350-65c62ad1b888",
+            "10556cd1-c002-41e0-8b97-acddddb46102"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 538,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

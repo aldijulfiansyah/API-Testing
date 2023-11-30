@@ -1,0 +1,7 @@
+mocha
+supertest
+chai
+
+reporting : mochawesome
+
+run reporting : npx mocha --spec test/api/chaiAssert.js --reporter mochawesome
